@@ -1,11 +1,12 @@
 import logging
+from datetime import datetime
 import time
 from pymodbus.client import ModbusTcpClient
 
 # 파일 저장은 나중에 지워도 됨, 현재 파일 저장이랑 출력 동시에 하도록 했음
 logging.basicConfig(
     level=logging.INFO,
-    format='[%(asctime)s] %(levelname)s: %message)s',
+    format='[%(asctime)s] %(levelname)s: %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S',
     handlers=[
         logging.FileHandler("sensor_data.log", encoding="utf-8"),
