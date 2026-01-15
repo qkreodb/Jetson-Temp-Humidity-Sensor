@@ -40,7 +40,7 @@ def run_test():
             else:
                 logger.error("서버 접근 오류")
             # 주기는 추후에 조정
-            time.sleep(2)
+            time.sleep(5)
     # 해당 부분이 있어서 사용자가 Ctrl+C로 끌 수 있음
     except KeyboardInterrupt:
         logger.info("종료")
