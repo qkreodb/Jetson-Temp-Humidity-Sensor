@@ -1,5 +1,4 @@
 import logging
-from datetime import datetime
 import time
 from pymodbus.client import ModbusTcpClient
 
